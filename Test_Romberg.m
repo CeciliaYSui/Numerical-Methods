@@ -1,0 +1,1 @@
+f = @(x) sine(x) / x; a = 1.3; b = 2.19; n = 8; Romberg(f,a,b,n)

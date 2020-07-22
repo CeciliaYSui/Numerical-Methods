@@ -1,0 +1,1 @@
+function p = nested_multiplication( coeff, x )ex = (numel(coeff)-1) : -1 : 0;v = bsxfun( @power, x(:), ex ); % vanermonde matrixp = v * coeff(:)';

@@ -1,0 +1,1 @@
+% Chpater 1 Practice function R = nested(a,x)% Input - a is a vector of coeffients of a polynomial P in increasing order % - x is the value at which to evaluate P% Output - P(x)%n = length(a);b = zeros(1,n);i = n-1while i > 0b(i) = a(i+1) + x*b(i+1);i = i - 1; endQ = b(1:n-1);R = a(1) + x * b(1);

@@ -1,0 +1,1 @@
+% author ---------- Cecilia Sui% Assignment ------  HW#5 % Course ---------- Numerical Methods% Date ------------ 03/12/2019% Section --------- Question#2, Test_Simpson with given functionsf = @(x) 4 / (1 + x^2) ; a = 0; b = 1; epsilon = 0.5 * 10^-5 ;level = 0; level_max = 4; Simpson(f,a,b,epsilon,level,level_max)% ans = 3.14159 

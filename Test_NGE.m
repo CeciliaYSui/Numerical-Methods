@@ -1,0 +1,2 @@
+% Cecilia Sui % Test_NGE  for n = 4:10  A = zeros(n,n);   b = zeros(n,1);   x = zeros(n,1);  % create matrix A & b  for i = 1:n      for j = 1:n        A(i,j) = (i+1)^(j-1);       endfor      c = (i+1)^n;       b(i,:) = (c - 1)/i;   endfor  [x,M] = naive_gauss(A,b);   xendfor
+

@@ -1,0 +1,1 @@
+function [y,n] = sine(x)   err = 0.5 * 10^-10;   n = 0;   a = 0;   fact = 1;   y = 0;     while(1)       a = 2 * n + 1;       fact = fact * (a-1) * a;       if (fact == 0)         fact = 1;       endif      term = (x^a) / fact;       y = y + term * (-1)^n;       if term <= err        break       endif       n = n + 1;     endwhile endfunction

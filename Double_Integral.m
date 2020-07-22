@@ -1,0 +1,2 @@
+% Cecilia Y. Sui% Homework #7 Question #2% calculate numerical value for the integral function Double_Integral()  f = @(x,y) sin(sqrt(log(x+y+1)));   n = 5000;  iprt = 1000;   r(1,:) = Random(n,1);   r(2,:) = Random(n,2);   j = 0;   sum = 0;   for i = 1:n    x = r(1,i);    y = r(2,i);     if ((x-0.5)^2 + (y-0.5)^2 <= 0.25)      j = j+1;       sum = sum + f(x,y);       if mod(j,iprt) == 0        vol = (pi/4) * sum / j;         j        vol      endif    endif  endfor  vol = (pi/4) * sum / j;   j  vol
+endfunction

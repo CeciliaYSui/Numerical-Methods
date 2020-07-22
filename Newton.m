@@ -1,0 +1,2 @@
+% f = @(x) x^3 - 2 * x^2 + x - 3% fprime = @(x) 3 * x^2 - 4 * x + 1% e = delta = 10^-20function Newton (f, fprime, x, nmax, e, delta)   fx = f(x);  disp('n = 0');  x  fx  for n = 1:nmax    fp = fprime(x);     if (abs(fp) < delta)       disp("small derivative");     endif     d = fx / fp;     x = x - d;     fx = f(x);     n     x    fx    if (abs(d) < e)       disp("convergence");     endif   endfor
+endfunction

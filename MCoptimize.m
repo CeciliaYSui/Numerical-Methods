@@ -1,0 +1,3 @@
+% Cecilia Y. Sui% Homework #7 Question #4% Optimizationfunction MCoptimize(n = 1350)  f = @(x,y,z) (e^x+y)^2 + 3*(1-z)^2;  r(:,1) = Random(n,1);   r(:,2) = Random(n,2);   r(:,3) = Random(n,3);   max = 0;  sum = 0;   varsum = 0;   % assume avg =  15.00395657220910  for i = 1:n    x = r(i,1);    y = r(i,2) * 2;     z = r(i,3) + 2;     func = f(x,y,z);     sum = sum + func;     varsum = varsum + (func - 15.00395657220910)^2;     if func > max      max = func;     endif  endfor  max  avg = sum / n;   var = varsum / n;   sd = sqrt(var);   avg  sd
+endfunction
+
